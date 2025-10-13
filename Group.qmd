@@ -1,0 +1,518 @@
+
+<!-- 核心样式：定义带文字的图片容器 -->
+<style>
+/* 1. 外层容器：设置图片为背景，控制尺寸和边框 */
+.lab-banner {
+  width: 100%;                  /* 宽度自适应父容器 */
+  max-width: 900px;            /* 设置最大宽度，避免在超宽屏幕上变形 */
+  height: 400px;                /* 固定高度，可以根据需要调整 */
+  margin: 2rem auto;            /* 上下留白，左右自动居中 */
+  border-radius: 12px;          /* 给容器添加圆角 */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* 添加阴影，增强立体感 */
+  
+  /* 核心：将图片设置为背景 */
+  background-image: url("images/shandongdaxue.jpg"); /* 替换为你的山大图片路径 */
+  background-size: cover;       /* 背景图自适应容器大小，保持比例并覆盖整个容器 */
+  background-position: center;  /* 背景图居中显示 */
+  
+  /* 核心：使用Flexbox实现内部文字的居中对齐 */
+  display: flex;
+  justify-content: center;      /* 水平居中 */
+  align-items: center;          /* 垂直居中 */
+  
+  position: relative;           /* 为伪元素提供定位上下文 */
+  overflow: hidden;             /* 隐藏伪元素超出容器的部分 */
+}
+
+/* 2. 文字层：定义实验室名称的样式 */
+.lab-name {
+  color: white;                 /* 文字颜色设为白色，与图片形成对比 */
+  font-size: 3rem;              /* 文字大小，可根据需要调整 */
+  font-weight: 800;             /* 文字加粗，更醒目 */
+  text-align: center;           /* 文本内容本身也居中 */
+  padding: 1rem;                /* 增加文字周围的内边距 */
+  z-index: 2;                   /* 确保文字在最上层 */
+  
+  /* 添加文字阴影，增强在复杂背景上的可读性 */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* 3. 可选增强：添加半透明遮罩，使文字更清晰 */
+/* 这是一个高级技巧，通过伪元素在图片上覆盖一层半透明黑色，降低背景复杂度 */
+.lab-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* 黑色半透明遮罩，0.3是透明度（0-1） */
+  z-index: 1;                   /* 遮罩层在图片之上，文字之下 */
+}
+</style>
+
+<!-- 页面内容 -->
+<div class="lab-banner">
+<div class="lab-name">
+智能感知实验室<br>
+(Intelligent Sensing Lab)
+</div>
+</div>
+
+
+::: {#center}
+
+
+## 实验室简介
+
+智能感知实验室依托山东大学控制科学与工程学院，致力于计算机视觉、模式识别、机器学习和人工智能等前沿领域的研究。实验室拥有一支由教授、副教授、青年教师和博士/硕士研究生组成的高水平研究团队，在国内外重要学术期刊和会议上发表论文多篇，主持和参与多项国家级和省部级科研项目。
+
+
+
+
+<style>
+/* 容器设置 */
+#center {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* 文本排版优化 */
+#center p, 
+#center ul, 
+#center ol, 
+#center h2, 
+#center h3 {
+  text-align: justify;
+  text-justify: inter-ideograph;
+  word-break: break-word;
+  line-height: 1.6;
+}
+
+:root {
+    --primary: #001f3f;
+    --accent: #0074D9;
+    --light: #f8f9fa;
+    --text: #2c3e50;
+    --shadow: 0 5px 15px rgba(0,0,0,0.08);
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light);
+    color: var(--text);
+    line-height: 1.7;
+    margin: 0;
+  }
+  .hero {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+  }
+  .hero h1, .hero p {
+    margin: 0.5rem 0;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .section {
+    background: white;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: visible; /* 确保图片不被容器遮挡 */
+  }
+  .section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--accent);
+  }
+  h2 {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+  .tag {
+    display: inline-block;
+    background: #e3f2fd;
+    color: #0d47a1;
+    padding: 0.4em 0.8em;
+    margin: 0.3rem;
+    border-radius: 50px;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  .members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .member-card {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 1.2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  .member-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: var(--accent);
+  }
+  .member-card p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  /* 教授信息布局：确保图片和文字正常排列 */
+  .prof-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 1rem 0;
+  }
+  .prof-img {
+    width: 140px; /* 固定图片宽度 */
+    height: 180px; /* 固定图片高度 */
+    flex-shrink: 0; /* 防止图片被压缩 */
+  }
+  .prof-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持图片比例，避免拉伸变形 */
+    border-radius: 8px; /* 圆角样式 */
+    box-shadow: var(--shadow); /* 阴影样式 */
+    display: block; /* 解决图片下方多余空白问题 */
+  }
+  .prof-desc {
+    flex-grow: 1; /* 文字区域自动填充剩余空间 */
+  }
+  .publications {
+    list-style: none;
+    padding-left: 0;
+  }
+  .pub-item {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  .pub-item::before {
+    content: "•";
+    color: var(--accent);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+  .pub-title {
+    font-weight: bold;
+    color: #1a73e8;
+  }
+  .highlight {
+    background-color: #fffbe6;
+    border-left: 4px solid #ffd700;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    font-size: 0.95em;
+  }
+  footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    background: white;
+    margin-top: 4rem;
+  }
+  /* 响应式适配：小屏幕下图片和文字垂直排列 */
+  @media (max-width: 768px) {
+    .section { padding: 1.8rem; }
+    .hero { padding: 4rem 1rem; }
+    .prof-info {
+      flex-direction: column; /* 垂直排列 */
+      align-items: center; /* 居中对齐 */
+      text-align: center; /* 文字居中 */
+    }
+  }
+</style>
+
+
+## 团队简介
+团队负责人**张敬林教授**，教授，博导，泰山学者-特聘教授，山东省杰出青年、齐鲁青年学者和全球前2%顶尖科学家，聚焦于人工智能在**气象遥感和赋能工业场景**中的前沿研究，涵盖：气象卫星云图识别与热带气旋预测、视觉语言大模型、工业异常检测、浮游生物识别和具身智能。已发表Nature Communications、AAAI、TNNLS、TII、TGRS等CCFA类和IEEE汇刊论文40余篇。获中国计算机学会技术发明二等奖、中国图像图形学会科技进步二等奖和广东省技术发明一等奖等奖励。主持科技部重点研发项目和国家自然科学基金联合基金等10余项，与复旦大学、天津大学、航天宏图和山东省计算中心等企业和科研机构合作，通过产学研用合作，联合研制具有国际竞争力的气象遥感与智能解释关键技术与平台。团队坚持“拒绝平庸 突破自我”理念--既追求国际一流学术突破，致力推动技术落地于气象服务和工业应用等领域。
+
+## 近期研究成果
+
+<!-- 核心样式：动态效果+卡片布局 -->
+<style>
+/* 1. 成果列表容器：居中+间距 */
+.pub-list {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* 成果卡片之间的间距 */
+}
+
+/* 2. 成果卡片：边框+阴影+悬浮效果 */
+.pub-card {
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  transition: box-shadow 0.3s ease; /* 悬浮阴影加深 */
+  position: relative; /* 用于定位NEW标识和年份 */
+}
+
+.pub-card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* 3. 动态NEW标识：右下角+醒目样式+动画 */
+.pub-new {
+  /* 定位：右下角 */
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+
+  /* 样式：更醒目 */
+  background: #ef4444; /* 红色背景 */
+  color: white;
+  font-size: 0.9rem; /* 增大字号 */
+  font-weight: 800; /* 加粗字体 */
+  padding: 0.4rem 0.9rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(239, 68, 68, 0.4); /* 红色阴影，增强立体感 */
+  
+  /* 增强文字可读性：添加白色描边 */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  
+  /* 轻微旋转，增加设计感 */
+  transform: rotate(-3deg);
+  
+  /* 动态效果：脉动动画（缩放+阴影变化） */
+  animation: pulse 2s infinite;
+}
+
+/* 脉动动画关键帧 */
+@keyframes pulse {
+  0% { 
+    transform: rotate(-3deg) scale(1); 
+    box-shadow: 0 4px 8px rgba(239, 68, 68, 0.4);
+  }
+  50% { 
+    transform: rotate(-3deg) scale(1.08); 
+    box-shadow: 0 6px 12px rgba(239, 68, 68, 0.6);
+  }
+  100% { 
+    transform: rotate(-3deg) scale(1); 
+    box-shadow: 0 4px 8px rgba(239, 68, 68, 0.4);
+  }
+}
+
+/* 4. 成果内容排版：粗体期刊+斜体作者 */
+.pub-title {
+  font-size: 1.1rem;
+  color: #111827;
+  margin: 0 0 0.5rem 0;
+}
+
+/* 标粗期刊/会议名称 */
+.pub-journal {
+  font-weight: bold; /* 核心需求：期刊名粗体 */
+  color: #0d6efd; /* 蓝色突出学术载体 */
+  margin: 0 0 0.3rem 0;
+}
+
+/* 作者名斜体区分 */
+.pub-authors {
+  font-style: italic;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* 5. 年份标签：右上角 *//* 5. 年份标签：右中间（垂直居中+水平靠右） */
+.pub-year {
+  position: absolute;
+  top: 50%;          /* 先将标签顶部定位到卡片垂直中点 */
+  right: 1.5rem;     /* 水平方向保持靠右（与原样式一致） */
+  transform: translateY(-50%); /* 向上偏移自身高度的50%，实现精确垂直居中 */
+  font-size: 0.9rem;
+  color: #4b5563;
+  background: #f3f4f6;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  /* 可选：防止年份标签被文字遮挡（若卡片内容过满） */
+  z-index: 1;
+}
+
+</style>
+
+<!-- 研究成果列表：按需添加/删除卡片 -->
+<div class="pub-list">
+<!-- 成果1：2024年最新成果（加NEW标识） -->
+<div class="pub-card">
+<!-- 动态NEW标识（右下角） -->
+<div class="pub-new">NEW</div>
+
+<div class="pub-year">2025</div>
+<h3 class="pub-title">Benchmark Dataset and Deep Learning Method for Global Tropical Cyclone Forecasting,Nature Communications</h3>
+<p class="pub-journal">Nature Communications</p> <!-- 期刊名粗体 -->
+<p class="pub-authors">作者: Cheng Huang, Pan Mu, Jinglin Zhang, Sixian Chan, Shiqi Zhang,Hanting Yan, Shengyong Chen & Cong Bai.</p>
+</div>
+
+<!-- 成果2：2023年成果（无NEW） -->
+<div class="pub-card">
+<div class="pub-year">2025</div>
+<h3 class="pub-title">S2DBFT: Spectral–Spatial Dual-Branch Fusion Transformer for Hyperspectral Image Classification</h3>
+<p class="pub-journal">IEEE Transactions on Geoscience and Remote Sensing</p> <!-- 会议名粗体 -->
+<p class="pub-authors">作者: Yiheng Zhang;Ziqiang Wang;Meng Huang;Ming Li;Jian Zhang;Shandong Wang;Jinglin Zhang;Heng Zhang</p>
+</div>
+
+<!-- 成果3：2023年成果（无NEW） -->
+<div class="pub-card">
+<div class="pub-year">2025</div>
+<h3 class="pub-title">MetricGrids: Arbitrary Nonlinear Approximation with Elementary Metric Grids based Implicit Neural Representation</h3>
+<p class="pub-journal">2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</p> <!-- 期刊名粗体 -->
+<p class="pub-authors">作者: Shu Wang;Yanbo Gao;Shuai Li;Chong Lv;Xun Cai;Chuankun Li;Hui Yuan;Jinglin Zhang</p>
+</div>
+</div>
+
+
+<!-- 只保留必要样式，避免干扰解析 -->
+<style>
+.member-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.member-img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 1px solid #eee;
+}
+.member-text {
+  flex: 1;
+  min-width: 280px;
+}
+.member-name {
+  color: #0d6efd;
+  margin-top: 0;
+}
+.member-tag {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: #e7f5ff;
+  color: #0d6efd;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin: 0.3rem;
+}
+</style>
+
+## 团队老师
+
+<div class="member-container">
+<img class="member-img" src="images/zhangjinglin.jpeg" alt="张敬林教授照片">
+<div class="member-text">
+<h3 class="member-name">张敬林 教授</h3>
+<p><strong>智能感知团队，团队负责人</strong></p>
+<p>主要研究人工智能、海洋遥感以及工业大数据分析，在CVPR、AAAI等会议和Trans期刊发表40余篇，主持国家自然科学基金、科技部重点研发项目等国家级课题5项。获中国计算机学会技术发明二等奖、中国图像图形学会科技进步二等奖和广东省技术发明一等奖等奖励。</p>
+<div>
+<span class="member-tag">人工智能</span>
+<span class="member-tag">海洋遥感</span>
+<span class="member-tag">工业大数据</span>
+</div>
+</div>
+</div>
+
+<div class="member-container">
+<img class="member-img" src="images/luweizhi.jpg" alt="鲁威志老师">
+<div class="member-text">
+<h3 class="member-name">鲁威志 副教授</h3>
+<p><strong>智能感知团队，老师</strong></p>
+<p>研究领域涵盖信号处理与机器学习，近期尤其关注深度神经网络的结构可解释性与轻量化设计，通过融合压缩感知的稀疏约束机制、随机投影的降维优化思想，以及统计学习的理论验证方法，构建理论透明且计算高效的模型体系。</p>
+<div>
+<span class="member-tag">压缩感知</span>
+<span class="member-tag">机器学习</span>
+<span class="member-tag">信号与图像处理</span>
+</div>
+</div>
+</div>
+
+<div class="member-container">
+<img class="member-img" src="images/liyuanjiang.jpg" alt="李垣江教授照片">
+<div class="member-text">
+<h3 class="member-name">李垣江教授</h3>
+<p><strong>智能感知团队，团队老师</strong></p>
+<p>中澳（镇江）人工智能研究院副院长，江苏省冷链学会副秘书长，江苏省电子学会理事，入选镇江市“金山英才”计划</p>
+<div>
+<span class="member-tag">故障诊断</span>
+<span class="member-tag">电池预测</span>
+<span class="member-tag">模式识别</span>
+</div>
+</div>
+</div>
+
+
+
+## 研究方向
+
+<div class="tags">
+  <span class="tag">AI4S</span>
+  <span class="tag">基于工业场景的视觉语言模型</span>
+  <span class="tag">气象预报</span>
+  <span class="tag">浮游生物的识别与监测</span>
+  <span class="tag">气象遥感</span>
+  <span class="tag">异常监测</span>
+  <span class="tag">具身智能</span>
+  <span class="tag">故障诊断</span>
+</div>
+
+
+## 加入我们
+
+欢迎具有以下背景的同学加入本团队攻读硕士/博士学位或从事博士后研究：
+
+- 计算机、自动化、电子、数学、气象等相关专业
+- 熟悉 Python / PyTorch / TensorFlow / OpenCV
+- 对 AI 在工业、气象等领域的应用有浓厚兴趣
+
+🎓 招收：硕士生、博士生、博士后、科研实习生  
+📧 请将简历发送至：<strong>Jinglin.zhang@sdu.edu.cn</strong>
+
+
+
+
+<footer>
+  &copy; 2025 山东大学 张敬林教授团队 | 
+  地址：山东大学千佛山校区北院创新大厦二期515 -- 视觉感知与智能系统教育部重点实验室| 
+  邮箱: <a href="mailto:Jinglin.zhang@sdu.edu.cn">Jinglin.zhang@sdu.edu.cn</a>
+</footer>
+
+
+
+:::
+

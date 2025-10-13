@@ -1,0 +1,43 @@
+---
+title: "Research Group Members"
+---
+
+::: {#center}
+
+
+<!-- 自定义样式 -->
+<style>
+/* 容器设置 */
+#center {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* 文本排版优化 */
+#center p, 
+#center ul, 
+#center ol, 
+#center h2, 
+#center h3 {
+  text-align: justify;
+  text-justify: inter-ideograph;
+  word-break: break-word;
+  line-height: 1.6;
+}
+
+</style>
+
+
+## Contact Information
+
+School of Control Science and Engineering, Shandong University
+No. 17923, Jingshi Road, Qianfoshan Campus, Lixia District, Jinan P. R. China 250061
+
+山东大学千佛山校区北院创新大厦二期515 -- 视觉感知与智能系统实验室, 中国济南 250061
+
+Email: zhangjinglin at sdu.edu.cn
+
+
+::: 

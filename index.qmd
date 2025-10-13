@@ -1,0 +1,144 @@
+---
+title: "Jinglin Zhang"
+image: images/zhangjinglin.jpeg
+about:
+  id: center
+  template: jolla
+  image-width: 12em
+  image-shape: rectangle
+  links:
+  - icon: mailbox
+    text: 邮箱
+    href: Jinglin.zhang@sdu.edu.cn
+  - icon: book
+    text: 个人主页1
+    href: https://control.sdu.edu.cn/info/1084/6713.htm
+  - icon: book2
+    text: 个人主页2
+    href: https://faculty.sdu.edu.cn/zhangjinglin/zh_CN/zlcg/1462905/content/79106.htm
+  - icon: fingerprint
+    text: ORCID
+    href: https://ieeexplore.ieee.org/author/37088923676
+---
+
+<!-- 自定义样式 -->
+<style>
+/* 容器设置 */
+#center {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* 文本排版优化 */
+#center p, 
+#center ul, 
+#center ol, 
+#center h2, 
+#center h3 {
+  text-align: justify;
+  text-justify: inter-ideograph;
+  word-break: break-word;
+  line-height: 1.6;
+}
+
+/* 高亮关键词样式 */
+.highlight-blue {
+  font-weight: bold;
+  color: #1e3a8a;     /* 深蓝 - AI类 */
+  font-size: 1.1em;
+}
+
+.highlight-purple {
+  font-weight: bold;
+  color: #7e22ce;     /* 紫色 - 遥感/图像类 */
+  font-size: 1.05em;
+}
+
+.highlight-teal {
+  font-weight: bold;
+  color: #0d9488;     /* 青绿 - 数据/系统类 */
+  font-size: 1.1em;
+}
+
+/* 标题样式增强 */
+#center h2 {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  margin-top: 1.5em;
+  color: #2c3e50;
+}
+</style>
+
+::: {#center}
+
+## <strong>My Research Interests</strong>
+
+I am primarily engaged in research on <span class="highlight-blue">artificial intelligence</span>, <span class="highlight-purple">remote sensing interpretation</span>, and <span class="highlight-teal">big data analysis</span>. My work aims to bridge advanced machine learning techniques with real-world applications in environmental monitoring, intelligent systems, and industrial diagnostics.
+
+<!-- 插入研究框架图 -->
+<div style="text-align: center; margin: 25px 0;">
+  <img 
+    src="images/figure1.jpeg" 
+    alt="Research Framework" 
+    style="width: 75%; max-width: 700px; border-radius: 12px; box-shadow: 0 6px 12px rgba(0,0,0,0.15);"
+  />
+  <p style="font-size: 0.9em; color: #666; margin-top: 10px;"><em>Figure1: Integrated framework of AI-driven remote sensing</em></p>
+</div>
+
+<!-- 插入研究框架图 -->
+<div style="text-align: center; margin: 25px 0;">
+  <img 
+    src="images/figure2.jpeg" 
+    alt="Research Framework" 
+    style="width: 75%; max-width: 700px; border-radius: 12px; box-shadow: 0 6px 12px rgba(0,0,0,0.15);"
+  />
+  <p style="font-size: 0.9em; color: #666; margin-top: 10px;"><em>Figure2: Demonstration of General Artificial Intelligence Large Model Application in Typical Industrial Scenarios</em></p>
+</div>
+
+I currently serve as an Expert Member of the Engineering Research Center of the Ministry of Education for Digital Learning Technology Integration and Application, a Member of the Organizational Work Committee of the Chinese Association for Artificial Intelligence (CAAI), a Member of the Intelligent Data Processing and Application Committee of the China Institute of Communications (CIC), a Member of the Computer Vision Professional Committee of the China Computer Federation (CCF), and an Executive Member of the Multimedia Professional Committee of the Chinese Society of Image and Graphics (CSIG).
+
+I also actively contribute to the academic community as an Associate Editor for *Data Science and Management* and a Guest Editor for several international journals. To date, I have been granted **7 national invention patents**, and my research has received multiple **provincial and ministerial-level awards**.
+
+## <strong>Students I Am Recruiting</strong>
+
+I am looking for motivated students who are passionate about innovation and interdisciplinary research. The following majors are welcome to apply:
+
+- <span class="highlight-blue">081100 控制科学与工程 (Control Science and Engineering)</span>
+- <span class="highlight-teal">085406 电子信息（控制工程）(Electronic Information - Control Engineering)</span>
+- <span class="highlight-blue">085410 人工智能 (Artificial Intelligence)</span>
+
+Expected intake:
+- **1–2 博士研究生** (2026级)
+- **3–5 硕士研究生** (2026级)
+- **5–7 本科实习生** (2024/2025级)
+
+If you have strong abilities in **independent learning**, **problem-solving**, and **teamwork**, I encourage you to contact me via email. Our group provides a supportive research environment with state-of-the-art software and hardware resources. Graduates from our lab are often recommended for further studies or employment at top universities, research institutes, and leading tech companies in China and abroad.
+
+Undergraduate students majoring in **computer science**, **electronic information**, **automation**, or related fields are especially welcome to join early and get involved in scientific projects. You’ll have opportunities to participate in prestigious “white-list” innovation competitions such as:
+- <span class="highlight-purple">挑战杯 (Challenge Cup)</span>
+- <span class="highlight-teal">互联网+ (Internet Plus)</span>
+- <span class="highlight-blue">数学建模 (Mathematical Modeling)</span>
+- ICAN Innovation Competition
+
+## <strong>Postdoctoral Opportunities</strong>
+
+Our research group recruits **two postdoctoral researchers each year**. I welcome candidates whose interests align with (but are not limited to):
+- <span class="highlight-blue">Artificial general intelligence</span>
+- <span class="highlight-purple">Remote Sensing Image Processing</span>
+- <span class="highlight-teal">Embodied Intelligence</span>
+
+We offer competitive compensation packages, with a total annual income ranging from **300,000 to 500,000 RMB** for outstanding candidates. If you are interested, please feel free to reach out to me by email with your CV and a brief research statement.
+
+## <strong> Education And Work Experience</strong>
+
+- **Mar. 2022 – Present**: Professor, School of Control Science and Engineering, Shandong University
+- **Mar. 2018 – Feb. 2022**: Business Supervisor (Rotational Position), Joint Fund Management Division, Planning Bureau, National - Natural Science Foundation of China
+- **Mar. 2022 – Mar. 2023**: Part-time Appointment, Division II, Department of Information Sciences, National Natural Science Foundation of China
+- **Jul. 2014 – Feb. 2022**: Associate Professor, then promoted to Professor, School of Computer Science, Nanjing University of Information Science & Technology
+- **Sep. 2010 – Jun. 2014**: Ph.D. in Electronic and Communication Engineering, Institut National des Sciences Appliquées de Rennes (INSA-Rennes), France
+- **Sep. 2007 – Jun. 2010**: Master of Engineering in Circuits and Systems, Shanghai University
+- **Sep. 2003 – Jun. 2007**: Bachelor of Engineering in Communication Engineering, South-Central Minzu University
+
+:::
