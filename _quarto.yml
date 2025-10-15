@@ -5,9 +5,9 @@ project:
 website:
   page-navigation: true
   title: "Jinglin Zhang"
-  site-url: https://zhoutao-sdu2025.github.io
+  site-url: https://jinglin-zhang.github.io/
   favicon: images/shandong.jpeg
-  repo-url: https://github.com/zhoutao-sdu2025/zhoutao-sdu2025.github.io
+  repo-url: https://github.com/Jinglin-Zhang/Jinglin-Zhang.github.io
   navbar: 
     background: "#A9CCE3"
     search: true
