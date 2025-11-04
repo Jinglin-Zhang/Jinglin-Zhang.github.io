@@ -349,6 +349,21 @@ AI4S创新团队<br>
 /* 5. 年份标签：右上角 *//* 5. 年份标签：右中间（垂直居中+水平靠右） */
 .pub-year {
   position: absolute;
+  top: 40%;          /* 先将标签顶部定位到卡片垂直中点 */
+  right: 1.5rem;     /* 水平方向保持靠右（与原样式一致） */
+  transform: translateY(-50%); /* 向上偏移自身高度的50%，实现精确垂直居中 */
+  font-size: 0.9rem;
+  color: #4b5563;
+  background: #f3f4f6;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  /* 可选：防止年份标签被文字遮挡（若卡片内容过满） */
+  z-index: 1;
+}
+
+/* 5. 年份标签：右上角 *//* 5. 年份标签：右中间（垂直居中+水平靠右） */
+.pub-year1 {
+  position: absolute;
   top: 50%;          /* 先将标签顶部定位到卡片垂直中点 */
   right: 1.5rem;     /* 水平方向保持靠右（与原样式一致） */
   transform: translateY(-50%); /* 向上偏移自身高度的50%，实现精确垂直居中 */
@@ -359,6 +374,22 @@ AI4S创新团队<br>
   border-radius: 4px;
   /* 可选：防止年份标签被文字遮挡（若卡片内容过满） */
   z-index: 1;
+}
+
+/* 新增：GitHub链接样式（与整体风格统一） */
+.pub-github {
+  font-weight: bold;
+  color: #0d6efd; /* 沿用期刊的蓝色，保持视觉一致 */
+  margin: 0.3rem 0 0 0; /* 与上方作者信息保持0.3rem间距，匹配期刊-作者的间距逻辑 */
+}
+.pub-github a {
+  font-weight: bold;
+  color: inherit; /* 链接继承父级蓝色 */
+  text-decoration: underline; /* 保留下划线，提示可点击 */
+}
+.pub-github a:hover {
+  font-weight: bold;
+  text-decoration: none; /* hover时取消下划线，优化交互体验 */
 }
 
 </style>
@@ -374,12 +405,14 @@ AI4S创新团队<br>
 <h3 class="pub-title">Distilled large language model-driven dynamic sparse expert activation mechanism</h3>
 <p class="pub-journal">Applied Soft Computing</p> <!-- 会议名粗体 -->
 <p class="pub-authors">作者: Qinghui Chen, Zekai Zhang, Zaigui Zhang, Kai Zhang, Dagang Li, Wenmin Wang, Jinglin Zhang, Cong Liu</p>
+<!-- 新增GitHub链接 -->
+<p class="pub-github">GitHub: <a href="https://github.com/Jinglin-Zhang/DS-MoE" target="_blank">https://github.com/Jinglin-Zhang/DS-MoE</a></p>
 </div>
 
 
 <!-- 成果2：2025年成果（无NEW） -->
 <div class="pub-card">
-<div class="pub-year">2025</div>
+<div class="pub-year1">2025</div>
 <h3 class="pub-title">Benchmark Dataset and Deep Learning Method for Global Tropical Cyclone Forecasting,Nature Communications</h3>
 <p class="pub-journal">Nature Communications</p> <!-- 期刊名粗体 -->
 <p class="pub-authors">作者: Cheng Huang, Pan Mu, Jinglin Zhang, Sixian Chan, Shiqi Zhang, Hanting Yan, Shengyong Chen & Cong Bai.</p>
@@ -388,7 +421,7 @@ AI4S创新团队<br>
 
 <!-- 成果3：2025年成果（无NEW） -->
 <div class="pub-card">
-<div class="pub-year">2025</div>
+<div class="pub-year1">2025</div>
 <h3 class="pub-title">S2DBFT: Spectral–Spatial Dual-Branch Fusion Transformer for Hyperspectral Image Classification</h3>
 <p class="pub-journal">IEEE Transactions on Geoscience and Remote Sensing</p> <!-- 会议名粗体 -->
 <p class="pub-authors">作者: Yiheng Zhang;Ziqiang Wang;Meng Huang;Ming Li;Jian Zhang;Shandong Wang;Jinglin Zhang;Heng Zhang</p>
