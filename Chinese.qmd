@@ -100,6 +100,7 @@ editor:
 ## 最新成果
 1.  hen Q, Zhang Z, Zhang Z, et al. Distilled large language model-driven dynamic sparse expert activation mechanism[J]. Applied Soft Computing, 2025: 114037.https://doi.org/10.1016/j.asoc.2025.114037.（中科院二区top，IF:6.6）
 2.  Huang C, Mu P, Zhang J, et al. Benchmark dataset and deep learning method for global tropical cyclone forecasting[J]. Nature Communications, 2025, 16(1): 5923. https://doi.org/10.1038/s41467-025-61087-4.（中科院一区，IF:17.694）
+3.  Zhang Y, Wang Z, Huang M, et al. S2DBFT: Spectral-Spatial Dual-Branch Fusion Transformer for Hyperspectral Image Classification[J]. IEEE Transactions on Geoscience and Remote Sensing, 2025.https://ieeexplore.ieee.org/abstract/document/11156119.（中科院一区，IF:8.6）
 
 ## 以往成果
 1.  Wang Jiashu, Song Jinze, Zhang Hao, Zhang Zekai, Ji Yunlong, Zhang, Wenyin, Zhang Jinglin and Wang Xing, SPMNet: A Siamese Pyramid Mamba Network for Very-High-Resolution Remote Sensing Change Detection, IEEE Transactions on Geoscience and Remote Sensing, 2025, DOI:10.1109/TGRS.2025.3565801.（中科院一区，IF:5.855）
