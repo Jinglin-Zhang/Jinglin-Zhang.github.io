@@ -392,16 +392,47 @@ AI4S创新团队<br>
   text-decoration: none; /* hover时取消下划线，优化交互体验 */
 }
 
+
 </style>
 
-
-<!-- 研究成果列表：按需添加/删除卡片 -->
 <div class="pub-list">
 
 <!-- 成果1：2025年最新成果（加NEW标识） -->
 <div class="pub-card">
 <!-- 动态NEW标识（右下角） -->
 <div class="pub-new">NEW</div>
+<div class="pub-year">2026</div>
+<h3 class="pub-title">AI weather prediction toward multi-scale Earth system prediction: status and pathways</h3>
+<p class="pub-journal">Science Bulletin</p> <!-- 会议名粗体 -->
+<p class="pub-authors">作者: Zhang J, Chen Q, Zhang F, Niu Z, Zhang Z, Ling F, Guo B, Liu H, Bai C, Li G, Zhang R</p>
+</div>
+
+<!-- 成果1：2025年最新成果（加NEW标识） -->
+<div class="pub-card">
+<!-- 动态NEW标识（右下角） -->
+<div class="pub-new">NEW</div>
+<div class="pub-year">2026</div>
+<h3 class="pub-title">Unification of Closed-Open Industrial Detection Scenarios: New Large-Scale Benchmarks, Challenges and Baselines</h3>
+<p class="pub-journal">IEEE Transactions on Pattern Analysis and Machine Intelligence</p> <!-- 会议名粗体 -->
+<p class="pub-authors">作者: Zhang, Zekai and Zhang, Jinglin and Chen, Qinghui and Li, Gang and Chen, Da</p>
+<!-- 新增GitHub链接 -->
+<p class="pub-github">GitHub: <a href="https://github.com/hellozzk/MMIO.git" target="_blank">https://github.com/hellozzk/MMIO.git</a></p>
+</div>
+
+<!-- 成果1：2025年最新成果（加NEW标识） -->
+<div class="pub-card">
+<!-- 动态NEW标识（右下角） -->
+<div class="pub-new">NEW</div>
+<div class="pub-year">2026</div>
+<h3 class="pub-title">A Novel Dataset and Lightweight Distillation Baseline for Highlight Transparent Object Detection</h3>
+<p class="pub-journal">International Journal of Computer Vision</p> <!-- 会议名粗体 -->
+<p class="pub-authors">作者: Zhang, Zekai and Zhou, Mingle and Wan, Honglin and Li, Min and Li, Gang and Han, Delong</p>
+</div>
+
+
+<!-- 成果1：2025年最新成果（加NEW标识） -->
+<div class="pub-card">
+<!-- 动态NEW标识（右下角） -->
 <div class="pub-year">2025</div>
 <h3 class="pub-title">Fine-tuning feature interaction for unsupervised domain adaptive low-light object detection</h3>
 <p class="pub-journal">Neurocomputing</p> <!-- 会议名粗体 -->
@@ -413,7 +444,6 @@ AI4S创新团队<br>
 <!-- 成果2：2025年最新成果（加NEW标识） -->
 <div class="pub-card">
 <!-- 动态NEW标识（右下角） -->
-<div class="pub-new">NEW</div>
 <div class="pub-year">2025</div>
 <h3 class="pub-title">Distilled large language model-driven dynamic sparse expert activation mechanism</h3>
 <p class="pub-journal">Applied Soft Computing</p> <!-- 会议名粗体 -->
@@ -545,7 +575,7 @@ AI4S创新团队<br>
 
 
 <footer>
-  &copy; 2025 山东大学 张敬林教授团队 | 
+  &copy; 2026 山东大学 张敬林教授团队 | 
   地址：山东大学千佛山校区北院创新大厦二期515 -- 视觉感知与智能系统教育部重点实验室| 
   邮箱: <a href="mailto:Jinglin.zhang@sdu.edu.cn">Jinglin.zhang@sdu.edu.cn</a>
 </footer>

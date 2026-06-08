@@ -24,7 +24,9 @@
 </style>
 
 ## 期刊论文
-
+1.  Zhang J, Chen Q, Zhang F, et al. AI weather prediction toward multi-scale Earth system prediction: status and pathways[J]. Science Bulletin, 2026. （中科院一区top，IF:21.1）
+2.  Zhang Z, Zhang J, Chen Q, et al. Unification of Closed-Open Industrial Detection Scenarios: New Large-Scale Benchmarks, Challenges and Baselines[J]. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2026.[-Link-](https://ieeexplore.ieee.org/document/11474495).（中科院一区top，IF:18.6）
+3.  Zhang Z, Li G, Zhang H, et al. A Novel Dataset and Lightweight Distillation Baseline for Highlight Transparent Object Detection[J]. International Journal of Computer Vision, 2026, 134(4): 157.[-Link-](https://doi.org/10.1007/s11263-025-02718-7).（中科院二区，IF:19.5）
 1.  Wang Jiashu, Song Jinze, Zhang Hao, Zhang Zekai, Ji Yunlong, Zhang, Wenyin, **Zhang Jinglin** and Wang Xing, SPMNet: A Siamese Pyramid Mamba Network for Very-High-Resolution Remote Sensing Change Detection, **IEEE Transactions on Geoscience and Remote Sensing**, 2025, [-Link-](DOI:10.1109/TGRS.2025.3565801). （中科院一区，IF:5.855）
 2.  S. Wang, Y.B. Gao, S. Li, C. Lv, X. Cai, C.K. Li, H. Yuan, **J.L. Zhang**, MetricGrids: Arbitrary Nonlinear Approximation with Elementary Metric Grids based Implicit Neural Representation. **IEEE Conference on Computer Vision and Pattern Recognition (CVPR)**, 2025, Highlight Paper.
 3.  Z. Zhang, Q. Chen, M. Xiong, S. Ding, Z. Su, X. Yao, Y. Sun, C. Bai, and **J. Zhang**, Zero-shot learning in industrial scenarios: New large-scale benchmark, challenges and baseline, **Proceedings of the AAAI Conference on Artificial Intelligence(AAAI)**, 2025.
